@@ -744,8 +744,8 @@ span.logo_style {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn-icon:hover,
-.close-btn-icon:focus {
+.close-btn:hover .close-btn-icon,
+.close-btn:focus .close-btn-icon {
     fill: #ffffff;
 }
 
@@ -861,21 +861,22 @@ span.logo_style {
 }
 
 .checkbox-icon {
-    display: inline-block;
+    display: inline-flex;
     width: 16px;
     height: 16px;
-    border: 1.25px solid #2A2A2A;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     margin-right: 8px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
 }
 
-.checkbox-input:checked+.checkbox-icon {
-    background-color: #4d5ae5;
-    border-color: #4d5ae5;
-    background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.16699 5.54169L4.86102 9.23573L12.6923 1.4044L11.9023 0.614365L4.86102 7.65564L1.95703 4.75166Z' fill='white'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center;
+.checkbox-input:checked+.checkbox-label .checkbox-icon {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
 }
 
 .privacy-link {
