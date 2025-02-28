@@ -620,14 +620,18 @@ span.logo_style {
 
 .subscribe-input {
     width: 264px;
-    height: ;
+    height: 40px;
     padding: 12px;
     border: 1px solid #fff;
     border-radius: 4px;
     font-size: 14px;
     outline: none;
     background-color: transparent;  /* Робимо фон прозорим */
-    box-shadow: none; /* Видаляємо тінь */
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: #fff;  /* Колір тексту білий */
 }
 
@@ -637,7 +641,7 @@ span.logo_style {
 
 /* Кнопка підписки */
 .subscribe-button {
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -647,8 +651,10 @@ span.logo_style {
     color: #ffffff;
     border: none;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -659,6 +665,7 @@ span.logo_style {
 
 .subscribe-icon {
     fill: #ffffff;
+    margin-left: 16px;
 }
 
 /* #endregion Footer */
