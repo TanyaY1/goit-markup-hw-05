@@ -697,6 +697,7 @@ span.logo_style {
     border-radius: 4px;
     width: 408px;
     min-height: 584px;
+    padding: 72px 24px 24px 24px;
     background-color: #fcfcfc;
     position: absolute;
     top: 50%;
@@ -750,16 +751,7 @@ span.logo_style {
 }
 
 
-:root {
-    --text-color: #2E2F42;
-    /* Додаємо CSS-змінну */
-}
-
-.container-form {
-    padding: 72px 24px 24px;
-}
-
-.form-title {
+.form-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
