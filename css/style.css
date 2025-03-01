@@ -749,6 +749,10 @@ span.logo_style {
     fill: #ffffff;
 }
 
+:root {
+    --main-text-color: #2E2F42;
+}
+
 .container-form {
     padding-top: 72px;
     padding-right: 24px;
@@ -756,14 +760,13 @@ span.logo_style {
     padding-left: 24px;
 }
 
-
 .form-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--main-text-color);
     margin-bottom: 16px;
 }
 
