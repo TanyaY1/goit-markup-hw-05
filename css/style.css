@@ -749,15 +749,14 @@ span.logo_style {
     fill: #ffffff;
 }
 
+
 :root {
-    --main-text-color: #2E2F42;
+    --text-color: #2E2F42;
+    /* Додаємо CSS-змінну */
 }
 
 .container-form {
-    padding-top: 72px;
-    padding-right: 24px;
-    padding-bottom: 24px;
-    padding-left: 24px;
+    padding: 72px 24px 24px;
 }
 
 .form-title {
@@ -766,7 +765,8 @@ span.logo_style {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--main-text-color);
+    color: var(--text-color);
+    /* Використання змінної */
     margin-bottom: 16px;
 }
 
